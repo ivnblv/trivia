@@ -1,0 +1,27 @@
+.header {
+  padding: 0.5rem 0;
+  color: whitesmoke;
+  font-size: 1.7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header a {
+  font-weight: bold;
+  color: whitesmoke;
+  transition: color 0.15s ease-in;
+  -webkit-transition: color 0.15s ease-in;
+  -moz-transition: color 0.15s ease-in;
+  -ms-transition: color 0.15s ease-in;
+  -o-transition: color 0.15s ease-in;
+}
+.header a:hover {
+  color: #c4c4c4;
+}
+.score {
+  font-size: 1.4rem;
+  display: flex;
+}
+.score h4 {
+  margin-left: 0.5rem;
+}

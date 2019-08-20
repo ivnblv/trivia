@@ -1,0 +1,19 @@
+.answers {
+  margin-top: 1rem;
+  width: 100%;
+  background-color: #383838;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.1rem;
+  grid-auto-rows: 1fr;
+  will-change: transform, opacity;
+}
+.answer-btn {
+  padding: 1rem 0.5rem;
+  background-color: whitesmoke;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
