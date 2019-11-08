@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e6bcbf1181e7cfcb919acfd7825dc980",
+    "revision": "02402fbe9fc233a72e2ea4a8464e5365",
     "url": "/trivia/index.html"
   },
   {
-    "revision": "833312844e2a38ddb1e2",
-    "url": "/trivia/static/css/main.bca66870.chunk.css"
+    "revision": "4fc79e64a31783341436",
+    "url": "/trivia/static/css/main.e4a07ab7.chunk.css"
   },
   {
     "revision": "2440aa7a6364d023fe31",
     "url": "/trivia/static/js/2.b6e08202.chunk.js"
   },
   {
-    "revision": "833312844e2a38ddb1e2",
+    "revision": "4fc79e64a31783341436",
     "url": "/trivia/static/js/main.fe61d008.chunk.js"
   },
   {
