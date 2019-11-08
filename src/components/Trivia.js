@@ -31,7 +31,7 @@ const Trivia = ({ id }) => {
       <div className="question">
         {questions.length > 0 ? (
           <Question
-            question={questions[0]}
+            questionData={questions[0]}
             nextQuestion={nextQuestion}
             answers={shuffle([
               questions[0].correct_answer,

@@ -20,7 +20,7 @@ const CategorySelect = () => {
           <div className="categories">
             {categories.map(category => (
               <A
-                href={`/trivia/${category.id}`}
+                href={`/${category.id}`}
                 className="category hover"
                 key={category.id}
               >

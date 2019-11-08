@@ -4,31 +4,30 @@ import { addScore } from "../redux/actions/userActions";
 import Result from "./Result";
 import Answers from "./Answers";
 
-const Question = props => {
+const Question = ({ questionData, answers, nextQuestion }) => {
   const [answered, setAnswered] = useState(false);
   const [selectedAnswer, setSelected] = useState("");
-
-  const { question, correct_answer } = props.question;
   const dispatch = useDispatch();
 
+  const { question, correct_answer } = questionData;
   const selectAnswer = e => {
     const selectedAnswer = e.target.dataset.answer;
     setSelected(selectedAnswer);
     setAnswered(true);
   };
-  const nextQuestion = () => {
+  const next = () => {
     if (selectedAnswer === correct_answer) {
       dispatch(addScore());
     }
     setAnswered(false);
-    props.nextQuestion();
+    nextQuestion();
   };
 
   return (
     <React.Fragment>
       <h3 dangerouslySetInnerHTML={{ __html: question }} />
       {!answered ? (
-        <Answers answers={props.answers} selectAnswer={selectAnswer} />
+        <Answers answers={answers} selectAnswer={selectAnswer} />
       ) : (
         <Result
           selectedAnswer={selectedAnswer}
@@ -37,7 +36,7 @@ const Question = props => {
         />
       )}
       <button
-        onClick={nextQuestion}
+        onClick={next}
         className="next-btn"
         style={{ visibility: answered ? "visible" : "hidden" }}
       >

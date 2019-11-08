@@ -9,7 +9,7 @@ import "./css/main.css";
 
 const routes = {
   "/": () => <CategorySelect />,
-  "/trivia/:id": ({ id }) => <Trivia id={id} />
+  "/:id": ({ id }) => <Trivia id={id} />
 };
 function App() {
   const routeResult = useRoutes(routes);

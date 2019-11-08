@@ -1,9 +1,7 @@
 import React, { useRef } from "react";
 import { useSpring, useChain, animated } from "react-spring";
 
-const Result = props => {
-  const { selectedAnswer, correctAnswer, correct } = props;
-
+const Result = ({ selectedAnswer, correctAnswer, correct }) => {
   const opacityRef = useRef();
   const opacitySpring = useSpring({
     from: { opacity: 0.1 },

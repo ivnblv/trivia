@@ -1,9 +1,7 @@
 import React from "react";
 import { useSpring, animated, config } from "react-spring";
 
-const Answers = props => {
-  const { answers, selectAnswer } = props;
-
+const Answers = ({ answers, selectAnswer }) => {
   const scaleSpring = useSpring({
     from: {
       transform: "scale(0.1)",
